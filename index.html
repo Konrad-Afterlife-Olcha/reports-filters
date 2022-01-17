@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./reset.css">
+    <link rel="stylesheet" href="./css/main.min.css">
+    <title></title>
+</head>
+
+<body>
+    <div class="c-reports">
+        <div class="c-reports__wrapper">
+            <header class="l-header">
+                <a href="#" class="l-header__back">
+                    <span class="material-icons">arrow_back</span>
+                </a>
+                <h2 class="l-header__title">Raporty</h2>
+            </header>
+            <section class="l-filters">
+                <div class="l-filters__inner">
+                    <div class="l-filters__select-year-wrap">
+                        <label for="select-year"></label>
+                        <select name="years" id="select-year" class="l-filters__select-year js-select-year">
+                            <!-- Year options are generated here -->
+                        </select>
+                        <span class="material-icons l-filters__expand-more-icon">
+                            expand_more
+                        </span>
+                    </div>
+                    <div class="l-filters__text-field-wrap">
+                        <form class="js-text-form">
+                            <label for="text-input"></label>
+                            <input type="text" id="text-input" class="l-filters__text-field"
+                                placeholder="Podaj nazwę lub opis raportu">
+                            <button class="l-filters__search-button">Wyszukaj</button>
+                        </form>
+                    </div>
+                    <div class="l-filters__tags js-tags">
+                        <!-- Tags are generated here -->
+                    </div>
+                </div>
+            </section>
+            <section class="l-results">
+                <div class="l-results__wrapper js-results">
+                    <!-- Results are generated here -->
+                </div>
+            </section>
+        </div>
+
+    </div>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
