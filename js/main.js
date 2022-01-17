@@ -12,7 +12,7 @@ window.addEventListener('DOMContentLoaded', () => {
             activeTags: [],
             selectedYear: null,
         }
-        
+
         const createCustomElement = (params) => {
             element = document.createElement(params.element)
             if (params.classListArray) {
@@ -100,7 +100,7 @@ window.addEventListener('DOMContentLoaded', () => {
         };
 
         const fetchData = async () => {
-            let response = await fetch('/data/data.json')
+            let response = await fetch('./data/data.json')
             dataObj = await response.json()
         };
 
