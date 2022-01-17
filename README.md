@@ -1,0 +1,1 @@
+Reports visualisation and filtering by date, categories etc.
